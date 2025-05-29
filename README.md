@@ -142,3 +142,16 @@
 | `adiciones`             | Lista               | 
 | `cliente` (en pedido)   | Objeto (incrustado) | 
 | `producto` (en pedido)  | Objeto (incrustado) | 
+
+4. Reflexionar
+¿Qué fue lo más difícil de imaginar sin tablas?
+
+Lo más difícil fue imaginar cómo organizar los datos sin depender de claves foráneas ni relaciones normalizadas. En bases de datos relacionales estamos acostumbrados a separar todo en tablas distintas, pero en mongo, muchas veces es mejor reunir la información dentro de documentos, cosa que demanda de pensar de forma diferente y entender cómo se accede a los datos en un sistema documental.
+
+¿Qué nos gustó del enfoque con documentos?
+
+Nos gustó la flexibilidad que ofrece mongo para guardar datos relacionados dentro del mismo documento, lo que hace más sencilla la lectura de datos en muchos casos, cosa que facilita mucho el diseño en aplicaciones donde la lectura es más frecuente que las actualizaciones.
+
+¿Qué dudas surgieron al pensar en este nuevo tipo de base de datos?
+
+Tuvimos dudas sobre cuándo es mejor incrustar documentos y cuándo referenciar, por ejemplo si los productos cambian de precio o de nombre, o tambien los ingredientes, deberían estar incrustados o referenciados? También nos preguntamos cómo se manejan las actualizaciones masivas en documentos grandes y qué tan eficiente es mongo en esos casos.
