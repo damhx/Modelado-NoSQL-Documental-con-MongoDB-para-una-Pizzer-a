@@ -78,6 +78,8 @@
   "ingredientes": ["queso", "cabano", "jamón"],
   "disponible": true
   }
+  
+![productos](productos.png)
 
 
 
@@ -91,7 +93,7 @@
   ],
   "precio_combo": 45000
   }
-
+![combos](combos.png)
 
 
   -Dentro de pedidos iria 
@@ -119,7 +121,7 @@
   "total_pedido": 73000,
   "fecha": "2025-10-28T17:30:00Z",
   }
-
+![pedidos](pedidos.png)
 
   -Dentro de ingredientes iria 
   {
@@ -128,7 +130,16 @@
   "tipo": "lácteo",
   "stock_gramos": 3300
   }
+![ingredientes](ingredientes.png)
 
+-Dentro de clientes iria 
+{
+  "_id": "cliente001",
+  "nombre": "Laura Gómez",
+  "telefono": "3123456789",
+  "correo": "laura@example.com"
+ }
+![clientes](clientes.png)
 
 
 - ¿Qué campos serían listas, objetos u otros documentos incrustados?
