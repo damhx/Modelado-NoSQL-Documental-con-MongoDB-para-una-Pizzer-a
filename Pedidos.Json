@@ -1,0 +1,25 @@
+{
+  "_id": "pedido567",
+  "cliente": {
+    "cliente_id": "cliente001",
+    "nombre": "Laura Gómez"
+  },
+  "tipo_pedido": "para recoger",
+  "productos": [
+    {
+      "producto_id": "producto123",
+      "nombre": "Pizza Hawaiana",
+      "tamaño": "mediana",
+      "adiciones": ["queso extra", "tocineta"],
+      "precio_total": 28000
+    },
+    {
+      "combo_id": "combo001",
+      "nombre": "Combo Familiar",
+      "precio_total": 45000
+    }
+  ],
+  "total_pedido": 73000,
+  "fecha": "2025-05-29T17:30:00Z",
+  "estado": "en preparación"
+}

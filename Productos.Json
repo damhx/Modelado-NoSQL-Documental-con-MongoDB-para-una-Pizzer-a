@@ -1,0 +1,9 @@
+{
+  "_id": "producto123",
+  "nombre": "Pizza Hawaiana",
+  "tipo": "pizza",
+  "tamaño": "mediana",
+  "precio_base": 24000,
+  "ingredientes": ["queso", "piña", "jamón"],
+  "disponible": true
+}

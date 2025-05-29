@@ -1,0 +1,6 @@
+{
+  "_id": "ingrediente001",
+  "nombre": "queso",
+  "tipo": "lácteo",
+  "stock_gramos": 10000
+}
