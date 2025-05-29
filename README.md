@@ -19,3 +19,126 @@
     almacenando datos en tablas con filas y columnas, mientras que MongoDB almacena datos en documentos flexibles, generalmente en formato JSON, sin un esquema fijo.
 
 - ¿Qué son documentos y colecciones en MongoDB?
+
+
+
+
+
+
+
+
+
+
+
+- ¿Qué información tendría un documento de pedido? ¿Y un producto?
+
+
+  El documento de producto traeria la sigueinte informacion como 
+  -id
+  -nombre
+  -tipo
+  -precio_base
+  -ingredientes 
+  -disponible 
+
+  El documento de pedido traeria la sigueinte informacion como 
+  -id_pedido
+  -cliente
+    -id_cliente
+    -nombre
+  -tipo_pedido
+  -productos 
+    -producto_id
+    -nombre
+    -tamaño
+    -adiciones 
+    -precio_total
+      
+    -combo_id
+    -nombre
+    -precio_total
+  -total_pedido
+  -fecha
+  -ingredientes
+    -id
+    -nombre
+    -tipo
+    -stock_gramos
+
+
+¿Qué iría dentro del documento y qué se referenciaría?
+
+  -Dentro de productos iria
+  {
+  "id": "0001",
+  "nombre": "Pizza cabaronia",
+  "tipo": "pizza",
+  "tamaño": "mediana",
+  "precio_base": 26000,
+  "ingredientes": ["queso", "cabano", "jamón"],
+  "disponible": true
+  }
+
+
+
+  -Dentro de combos irira 
+  {
+  "_id": "01",
+  "nombre": "Combo Familiar",
+  "productos_incluidos": [
+    { "producto_id": "producto123", "cantidad": 1 },
+    { "producto_id": "producto789", "cantidad": 2 }
+  ],
+  "precio_combo": 45000
+  }
+
+
+
+  -Dentro de pedidos iria 
+  {
+  "_id": "0001",
+  "cliente": {
+    "cliente_id": "cliente001",
+    "nombre": "Laura Gómez"
+  },
+  "tipo_pedido": "para recoger",
+  "productos": [
+    {
+      "producto_id": "0001",
+      "nombre": "Pizza cabaronia ",
+      "tamaño": "mediana",
+      "adiciones": ["queso extra"],
+      "precio_total": 30000
+    },
+    {
+      "combo_id": "001",
+      "nombre": "Combo Familiar",
+      "precio_total": 45000
+    }
+  ],
+  "total_pedido": 73000,
+  "fecha": "2025-10-28T17:30:00Z",
+  }
+
+
+  -Dentro de ingredientes iria 
+  {
+  "_id": "I001",
+  "nombre": "queso",
+  "tipo": "lácteo",
+  "stock_gramos": 3300
+  }
+
+
+
+- ¿Qué campos serían listas, objetos u otros documentos incrustados?
+
+
+| Campo                   | Tipo                | 
+| ----------------------- | ------------------- | 
+| `ingredientes`          | Lista               | 
+| `productos_incluidos`   | Lista de objetos    | 
+| `productos` (en pedido) | Lista de objetos    | 
+| `adiciones`             | Lista               | 
+| `cliente` (en pedido)   | Objeto (incrustado) | 
+| `producto` (en pedido)  | Objeto (incrustado) | 
