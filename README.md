@@ -13,9 +13,9 @@
 
   Es un software de base de datos NoSQL que gestiona información orientada a documentos. Una de las características clave de MongoDB es su velocidad. Para devolver las consultas más rápidamente, MongoDB puede      utilizar operadores para realizar funciones específicas.
 
-  - ¿Qué diferencia hay entre una base de datos relacional (como MySQL) y una base de datos documental como MongoDB?
+- ¿Qué diferencia hay entre una base de datos relacional (como MySQL) y una base de datos documental como MongoDB?
 
     La principal diferencia entre una base de datos relacional como MySQL y una base de datos documental como MongoDB radica en su forma de almacenar y estructurar los datos. MySQL utiliza un esquema fijo,      
     almacenando datos en tablas con filas y columnas, mientras que MongoDB almacena datos en documentos flexibles, generalmente en formato JSON, sin un esquema fijo.
 
-  - ¿Qué son documentos y colecciones en MongoDB?
+- ¿Qué son documentos y colecciones en MongoDB?
